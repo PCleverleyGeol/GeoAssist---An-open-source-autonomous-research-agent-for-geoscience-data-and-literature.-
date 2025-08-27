@@ -1,3 +1,4 @@
 # GeoAssist---An-open-source-autonomous-research-agent-for-geoscience-data-and-literature.-
 LLM driven natural language to generate summaries, bibliography lists, download PDF reports autonomously, create Knowledge Graphs (GeoKG) and extract and visualise domain data (curently uses GPlates and Macrostrat).
-You will ned to login and create a free Huggingface token to use the inference model os.environ.setdefault("HF_TOKEN", "API_KEY_HERE). Alternatively, download a local LLM using Ollama and modift the code to use that.
+You will need to login and create a free Huggingface (https://huggingface.co/) token to use the inference model os.environ.setdefault("HF_TOKEN", "API_KEY_HERE). Alternatively, you can download a local LLM using Ollama and easily modify the GEOAssist code to use that.
+Ensure you set the download directory for PDF files. It is curently set to my download folder 'C:\Users\paulh\Downloads\Geological_AI_download' so you will need to change this to a folder on your machine.
