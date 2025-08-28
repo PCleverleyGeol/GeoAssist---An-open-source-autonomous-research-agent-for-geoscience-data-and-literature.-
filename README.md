@@ -7,6 +7,8 @@ For a given query such as “Discuss copper porphyry in Indonesia” the applica
 •	AI summary answer and up to 600 bibliographic references with DOI links.
 •	Automatically extract and visualise geological data from structured databases: EarthByte GPlates, The University of Wisconsin’s Macrostrat and Mindat from the Hudson Institute of Mineralogy.
 
+If you only wish to use just one option (e.g. create a knowledge-graph from documents), ensure you have documents in your asigned download folder in GEOAssist, untick all other options and run the agent.If you just wish to use the Mindat map option, untick all others then add your query and click run agent, same for the GPlates plat reconstruction option. If you just wish to gather PDF files from the Internet and collate references, untick all other options, enter your search query and click run agent. 
+
 The Python code can be run locally (e.g. using an interpreter like Spyder from Anaconda (https://www.anaconda.com/). You will need to install dependent libraries via: pip install gradio huggingface_hub duckduckgo_search pillow pdfminer.six PyPDF2
 You will need to login and create a free Huggingface (https://huggingface.co/) token to use the inference model os.environ.setdefault("HF_TOKEN", "API_KEY_HERE"). Alternatively, you can download a local LLM using Ollama and easily modify the GEOAssist code to use that for absolute privacy.
 If using the Mindat (minerals database) option, you will need to register with Mindat (https://www.mindat.org/) and obtain your API key. Add it to MINDAT_API_TOKEN="API_KEY_HERE". No API keys needed for Gplates or Macrostrat.
