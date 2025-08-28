@@ -11,7 +11,7 @@ If you only wish to use just one option (e.g. create a knowledge-graph from docu
 
 The Python code can be run locally (e.g. using an interpreter like Spyder from Anaconda (https://www.anaconda.com/). You will need to install dependent libraries via: pip install gradio huggingface_hub duckduckgo_search pillow pdfminer.six PyPDF2
 You will need to login and create a free Huggingface (https://huggingface.co/) token to use the inference model os.environ.setdefault("HF_TOKEN", "API_KEY_HERE"). Alternatively, you can download a local LLM using Ollama and easily modify the GEOAssist code to use that for absolute privacy.
-If using the Mindat (minerals database) option, you will need to register with Mindat (https://www.mindat.org/) and obtain your API key. Add it to MINDAT_API_TOKEN="API_KEY_HERE". No API keys needed for Gplates or Macrostrat.
+If using the Mindat (minerals database) option, you will need to register with Mindat (https://www.mindat.org/) and obtain your API key. Add it to MINDAT_API_TOKEN="API_KEY_HERE". No API keys needed for Gplates (https://www.gplates.org/) or Macrostrat (https://macrostrat.org/).
 Ensure you set the download directory for PDF files. It is curently set to my download folder 'C:\Users\paulh\Downloads\Geological_AI_download' so you will need to change this to a folder on your machine.
 If you see PDFs called 'untitled' in your downloads folder (not with date, author and title) it may mean it is a PDF scan (no text layer). Currently GEOAssist does not OCR PDF images (it will soon!). Also note if all PDFs are like this, no Knowledge Graph (Geo-KG) will be generated as it won't be able to read any text.
 
