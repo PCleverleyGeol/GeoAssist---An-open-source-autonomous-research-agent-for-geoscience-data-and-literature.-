@@ -1,5 +1,6 @@
 # GeoAssist---An-open-source-autonomous-research-agent-for-geoscience-data-and-literature.-
 LLM driven natural language application to generate summaries, bibliography lists, download PDF reports autonomously, create Knowledge Graphs (GeoKG) and extract and visualise domain data (curently uses GPlates, Macrostrat and Mindat). https://paulhcleverley.com/
+
 For a given query such as “Discuss copper porphyry in Indonesia” the application will perform the following:
 •	Crawl the Internet using the privacy based Internet search engine DuckDuckGo (https://duckduckgo.com/) for PDF files that match your query.
 •	Automatically machine-read the PDFs for additional geological terms, judge which to use, and autonomously conduct more Internet search queries with differing search terms, downloading hundreds of PDFs for your literature review.
